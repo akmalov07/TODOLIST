@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>TODO List</title>
+</head>
+<body class="font-kanit">
+
+<section>
+    <div class="container mx-auto">
+        <h2 class="text-[26px] font-medium text-[#252525] mt-[40px] mb-[18px] text-center">
+            TODO LIST
+        </h2>
+        <form id="add__form" class="w-[70%] mx-auto flex items-center justify-between rounded-[10px]">
+            <div class="border-[2px] border-[#6C63FF] w-[70%] h-[50px] py-[12px] px-[16px] rounded-[10px] flex justify-between items-center">
+                <input type="text" placeholder="Search note..." class="text-[16px] w-[90%] outline-none" id="search__input">
+                <i class="fa-solid fa-magnifying-glass text-[22px] text-[#6C63FF]"></i>
+            </div>
+            <button type="submit" class="py-[14px] h-[50px] bg-[#6C63FF] w-[15%] text-[18px] text-white rounded-[10px] flex items-center justify-center">
+                Send
+            </button>
+            <button type="button" class="w-[10%] h-[50px] bg-[#6C63FF] rounded-[10px] flex items-center justify-center">
+                <i class="fa-regular fa-moon text-[22px] text-white"></i>
+            </button>
+        </form>
+
+        <ul class="w-[50%] mx-auto mt-[40px]" id="note__list"></ul>
+    </div>
+</section>
+
+<script src="./app.js"></script>
+</body>
+</html>
